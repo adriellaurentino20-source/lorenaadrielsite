@@ -193,6 +193,7 @@ html {
     background-color: #FFFFFF;
     width: 1%;
     height: 26px;
+    
     border-radius: 20px;
     transition: width 0.3s linear;
 }
