@@ -30,7 +30,7 @@ html {
 }
 
 .foto-principal {
-    height: 420px !important;
+    height: 25rem !important;
     width: 100%;
     object-fit: cover;
     border: 9px solid rgba(255, 255, 255, 0.8);
@@ -151,10 +151,10 @@ html {
 .music-box {
     position: absolute;
     left: 25%;
-    top: 1.625rem;
+    top: 1.3rem;
     width: 50%;
     background-color: #E5383B;
-    height: 30px;
+    height: 1.875rem;
     padding: 8px !important;
     z-index: 1;
     box-sizing: border-box;
@@ -183,7 +183,7 @@ html {
 .bar-loading {
     background-color: #0b090a48;
     width: 60%;
-    height: 26px;
+    height: 1.625rem;
     border-radius: 20px;
     margin-right: auto;
 }
