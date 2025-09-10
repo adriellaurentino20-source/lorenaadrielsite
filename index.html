@@ -6,40 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amo você.</title>
     <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <div class="main mx-auto max-w items-center hidden">
+    <div class="main">
+        <div class="image-container">
+            <img src="https://adriellaurentino20-source.github.io/lorenaadrielsite/assets/fotolorena03.png" alt="fotoprincipal" class="foto-principal">
+            <div class="overlay"></div>
+            <div class="next-image">
+                <img src="https://adriellaurentino20-source.github.io/lorenaadrielsite/assets/arrowright.svg" alt="setadireita" class="setadireita">
+            </div>
+            <div class="back-image">
+                <img src="https://adriellaurentino20-source.github.io/lorenaadrielsite/assets/arrowleft.svg" alt="setadireita" class="setaesquerda">
+            </div>
+        </div>
+        
         <div class="music-box">
-            <audio src="assets/music.mp3" class="audio-player"></audio>
+            <audio src="https://adriellaurentino20-source.github.io/lorenaadrielsite/assets/music.mp3" class="audio-player"></audio>
             <div class="play">
-                <img src="assets/play.svg" alt="iniciar" class="imageiniciar">
+                <img src="https://adriellaurentino20-source.github.io/lorenaadrielsite/assets/play.svg" alt="iniciar" class="imageiniciar">
             </div>
             <div class="bar-loading">
                 <div class="bar-loaded"></div>
             </div>
             <div class="mute">
-                <img src="assets/mute.svg" alt="mutar" class="mute">
+                <img src="https://adriellaurentino20-source.github.io/lorenaadrielsite/assets/mute.svg" alt="mutar" class="mute">
             </div>
         </div>
-        <img src="assets/fotolorena03.png" alt="fotoprincipal" class="foto-principal">
-        <div class="next-image">
-            <img src="assets/arrowright.svg" alt="setadireita" class="setadireita">
-        </div>
-        <div class="back-image">
-            <img src="assets/arrowleft.svg" alt="setadireita" class="setaesquerda">
-        </div>
-        <div class="box-dot">
-        </div>
-        <div class="box-texto">
-            <div class="icon-title">
-                <img src="assets/heart.svg" alt="coracao" class="heart">
-                <img src="assets/heart.svg" alt="coracao" class="heart">
+        
+        <div class="box-texto absolute z-20">
+            <div class="icon-title flex justify-center gap-2 mb-2">
+                <svg class="w-6 h-6 heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
             </div>
             <h1 class="name">Adriel e Lorena</h1>
-            <h2 class="time">1 ano, 6 meses e 15 dias<br> 562 dias no total</h2>
-            <p>(scrolle o texto)</p>
-            <p class="phrase">
+            <h2 class="time text-white font-light"></h2>
+            <p class="text-white text-sm mb-2">(scrolle o texto)</p>
+            <p class="phrase" id="romance-text">
                 Meu amor, Lorena. Estou fazendo este texto para você, não só porque eu sou o seu namorado, mas vai ser do
                 fundo do meu coração. <br> <br>
 
@@ -50,8 +55,7 @@
                 Algo leve, sorridente e é algo até estranho as vezes, porque sempre pedi para Deus uma namorada, e
                 sempre pedi que fosse a única
                 na minha vida, que eu não queria ter mais de uma, e você apareceu.
-                <br>
-                <br>
+                <br> <br>
                 Não acredito que as coisas acontecem por acontecer, quando estavamos
                 terminados, a única coisa que eu falava para Deus era: Deus, se você me colocou aqui, não foi por nada,
                 não tem como duas pessoas se conhecerem,
@@ -59,7 +63,7 @@
                 Senhor, Deus, quer que eu vá e eu tou com
                 alguma missão, ou eu vou aprender, ou vou ensinar alguma coisa.
                 <br> <br>
-                Quero deixar esse texto registrado para
+                Quero deixar este texto registrado para
                 que se um dia eu for embora desta vida
                 para um lugar melhor, eu quero te encontrar por lá. Embora todas as confusões, maturidade, problemas
                 mentais, eu amo você, minha mulher.
@@ -67,6 +71,11 @@
                 Peço desculpas por todas as gafes que ja aconteceram entre a gente, acho que isso tudo é um processo de amadurecimento
                 queria debruçar-me em ideias, mas tudo que eu tenho para falar é que eu te amo. O amor é algo muito abstrato para ser colocado em frases. Amo você.
             </p>
+            <div class="flex flex-col md:flex-row gap-4 mt-4">
+                <button id="generate-poem" class="btn-gemini">
+                    Gerar Novo Poema
+                </button>
+            </div>
         </div>
     </div>
 </body>
